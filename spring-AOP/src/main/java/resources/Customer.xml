@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id = "CustomerService" class = "com.edureka.Edureka.CustomerService">
+	<property name="name" value = "Edureka"></property>
+	<property name = "url" value = "https://www.edureka.co"></property>
+</bean>
+<!--  this is done for before advice part. means before creation of bean the following should or would run -->
+<bean id = "HijackBeforeMethodBean" class = "com.edureka.Edureka.HijackBeforeMethod"></bean>
+<bean id = "CusomerServiceProxy" class = "org.springframework.aop.framework.ProxyFactoryBean">
+	<property name="target" ref="CustomerService"></property>
+	<property name = "interceptorNames">
+		<list>
+		<!--  name all the classes that needs to be called before your actual exceiution of object creation -->
+			<value>HijackBeforeMethodBean</value>
+		</list>
+	</property>
+</bean>
+</beans>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="example"/>
+<aop-project name="AOP"/>
+<aop-project name="SpringDataRestDemo"/>
+<aop-project name="DemoAutowire"/>
+<aop-project name="springbootrest"/>
+<aop-project name="FirstSpringBoot"/>
+<aop-project name="spring-AOP"/>
+<aop-project name="SpringWebAppDemo"/>
+<aop-project name="SpringCoreDemoProj"/>
+<aop-project name="SpringBootJPAH2"/>
+<aop-project name="MyWebApp"/>
+</aop-reference-model>

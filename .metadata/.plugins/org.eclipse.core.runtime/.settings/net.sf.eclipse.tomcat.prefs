@@ -1,0 +1,6 @@
+computeSourcePath=true
+contextsDir=/Users/admin/eclipse-workspace/SpringWebAppDemo/conf/Catalina/localhost
+eclipse.preferences.version=1
+tomcatConfigFile=/Users/admin/eclipse-workspace/SpringWebAppDemo/conf/server.xml
+tomcatDir=/Users/admin/eclipse-workspace/SpringWebAppDemo
+tomcatVersion=tomcatV8
